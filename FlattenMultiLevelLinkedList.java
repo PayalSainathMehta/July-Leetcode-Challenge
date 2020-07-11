@@ -17,6 +17,7 @@ class Node {
 
 public class FlattenMultiLevelLinkedList {
 	public Node flatten(Node head) {
+		if(head == null) return head;
 		Node pseudoHead = new Node(0, null, head, null);
 		Node curr, prev = pseudoHead;
 		
